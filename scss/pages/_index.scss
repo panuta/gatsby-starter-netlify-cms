@@ -1,0 +1,169 @@
+.page-index {
+  header {
+    padding: 0 40px;
+  }
+
+  .welcome {
+    font-family: Cardo, serif;
+    font-weight: 400;
+    font-size: 3em;
+  }
+
+  h1 {
+    font-family: Cardo, serif;
+    font-weight: 400;
+    font-size: 1.8em;
+    color: #666;
+    margin: 0 0 1.5rem;
+
+    em {
+      color: #222;
+      font-style: normal;
+      margin-left: 5px;
+    }
+  }
+
+  h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+
+    svg {
+      margin-right: 4px;
+    }
+  }
+
+  .professions {
+    font-family: 'Nunito', sans-serif;
+    padding: 0 40px;
+
+    p {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 0.7rem;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      color: #555;
+      list-style: none;
+      margin-bottom: 0.8rem;
+
+      em {
+        color: #222;
+        font-weight: 700;
+        font-size: 1.2rem;
+        font-style: normal;
+
+        display: block;
+        margin-bottom: 0.1rem;
+      }
+    }
+
+    .link-fullprofile {
+      color: #DE682C;
+      font-size: 1.2rem;
+
+      a {
+        border-bottom: 1px solid #BBB;
+        color: #777;
+        font-size: 1rem;
+        margin-right: 8px;
+        vertical-align: 2px;
+
+        &:hover {
+          color: #256bba;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .projects {
+    border-top: 1px solid #ddd;
+    margin-top: 2rem;
+    padding: 1.8rem 40px 0;
+
+    .project-box {
+      background-color: #F8F9FC;
+      padding: 0.9rem 1.2rem 0.8rem;
+
+      a {
+        color: #333;
+
+        h3 {
+          font-family: Cardo, serif;
+          font-weight: 700;
+          font-size: 1.2em;
+        }
+      }
+
+      p {
+        color: #555;
+        font-size: 0.9rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .writings {
+    border-top: 1px solid #ddd;
+    font-family: 'Nunito', sans-serif;
+    margin: 2rem 0 0;
+    padding: 1.5rem 40px 0;
+
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      margin-bottom: 0.8rem;
+    }
+
+    .category {
+      color: #DE682C;
+      margin-bottom: 0.3rem;
+    }
+
+    a {
+      h3 {
+        color: #333;
+        font-family: Cardo, serif;
+        font-weight: 400;
+        font-size: 1.5em;
+      }
+
+      &:hover {
+        h3 {
+          color: #256bba;
+          text-decoration-color: #256bba;
+        }
+      }
+    }
+
+    p {
+      color: #555;
+    }
+
+    hr {
+      color: #ddd;
+      text-align: left;
+      margin: 1.5rem auto 1.5rem 0;
+      width: 30%;
+    }
+  }
+}
+
+
+

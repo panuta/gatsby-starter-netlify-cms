@@ -1,0 +1,28 @@
+.navbar {
+  padding: 1rem 55px 0;
+
+
+  .navbar-nav {
+
+    .nav-item {
+      .nav-link {
+        color: #777;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 500;
+        margin: 0 25px 0 0;
+        padding: 0;
+
+      }
+
+      &.active {
+        .nav-link {
+          border-bottom: 2px solid #DE682C;
+          color: #555;
+          font-weight: 700;
+        }
+      }
+    }
+
+
+  }
+}
