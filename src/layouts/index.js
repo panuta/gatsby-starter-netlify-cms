@@ -11,9 +11,6 @@ const TemplateWrapper = ({ children }) => (
       <meta charSet="utf-8" />
     </Helmet>
     <nav className={'navbar'}>
-      {/*<button className={'navbar-toggler'} type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">*/}
-        {/*<i className={'far fa-bars'} />*/}
-      {/*</button>*/}
       <ul className={'navbar-nav'}>
         <li className={'nav-item active'}>
           <a className={'nav-link'} href="#">HOME</a>
