@@ -4,9 +4,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-purify-css',
-    },
-    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
