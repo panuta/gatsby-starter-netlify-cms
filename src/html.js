@@ -31,6 +31,7 @@ module.exports = class HTML extends React.Component {
         />
         {this.props.headComponents}
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="/libs/fontawesome/css/fontawesome-all.min.css" />
         {css}
       </head>
       <body {...this.props.bodyAttributes}>

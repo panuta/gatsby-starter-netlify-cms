@@ -10,17 +10,19 @@ const TemplateWrapper = ({ children }) => (
       <html lang="en" />
       <meta charSet="utf-8" />
     </Helmet>
-    <nav className={'navbar navbar-expand-lg'}>
-      <div className={'collapse navbar-collapse'}>
-        <ul className={'navbar-nav ml-auto'}>
-          <li className={'nav-item active'}>
-            <a className={'nav-link'} href="#">HOME</a>
-          </li>
-          <li className={'nav-item'}>
-            <a className={'nav-link'} href="#">CONTACT</a>
-          </li>
-        </ul>
-      </div>
+    <nav className={'navbar'}>
+      {/*<button className={'navbar-toggler'} type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">*/}
+        {/*<i className={'far fa-bars'} />*/}
+      {/*</button>*/}
+      <ul className={'navbar-nav'}>
+        <li className={'nav-item active'}>
+          <a className={'nav-link'} href="#">HOME</a>
+        </li>
+        <li className={'nav-item'}>
+          <a className={'nav-link'} href="#">CONTACT</a>
+        </li>
+      </ul>
+
     </nav>
     {children()}
   </div>

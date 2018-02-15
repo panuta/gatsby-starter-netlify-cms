@@ -1,6 +1,10 @@
 .page-index {
   header {
     padding: 0 40px;
+
+    @include media-breakpoint-down(md) {
+      padding: 0 15px;
+    }
   }
 
   .welcome {
@@ -21,6 +25,17 @@
       font-style: normal;
       margin-left: 5px;
     }
+
+    @include media-breakpoint-down(md) {
+      font-size: 1.5rem;
+
+      em {
+        font-size: 1.8rem;
+        display: block;
+        margin-top: 0.4rem;
+        margin-left: 0;
+      }
+    }
   }
 
   h2 {
@@ -37,6 +52,10 @@
   .professions {
     font-family: 'Nunito', sans-serif;
     padding: 0 40px;
+
+    @include media-breakpoint-down(md) {
+      padding: 0 15px;
+    }
 
     p {
       font-size: 1.1rem;
@@ -89,17 +108,29 @@
     margin-top: 2rem;
     padding: 1.8rem 40px 0;
 
+    @include media-breakpoint-down(md) {
+      padding: 1.8rem 15px;
+    }
+
     .project-box {
       background-color: #F8F9FC;
-      padding: 0.9rem 1.2rem 0.8rem;
+      padding: 1rem 1.2rem;
 
       a {
-        color: #333;
+        color: #256bba;
+        display: inline-block;
 
         h3 {
-          font-family: Cardo, serif;
-          font-weight: 700;
+          font-family: Nunito, sans-serif;
+          font-weight: 400;
           font-size: 1.2em;
+          margin-bottom: 0.3rem;
+        }
+
+        &:hover {
+          h3 {
+            text-decoration: underline;
+          }
         }
       }
 
@@ -116,6 +147,10 @@
     font-family: 'Nunito', sans-serif;
     margin: 2rem 0 0;
     padding: 1.5rem 40px 0;
+
+    @include media-breakpoint-down(md) {
+      padding: 1.5rem 15px;
+    }
 
     h2 {
       margin-bottom: 1.5rem;
@@ -137,8 +172,10 @@
     }
 
     a {
+      color: #256bba;
+      display: inline-block;
+
       h3 {
-        color: #333;
         font-family: Cardo, serif;
         font-weight: 400;
         font-size: 1.5em;
@@ -146,8 +183,7 @@
 
       &:hover {
         h3 {
-          color: #256bba;
-          text-decoration-color: #256bba;
+          text-decoration: underline;
         }
       }
     }

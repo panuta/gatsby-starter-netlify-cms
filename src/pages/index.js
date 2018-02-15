@@ -3,13 +3,6 @@ import Link from "gatsby-link";
 import Script from "react-load-script";
 import graphql from "graphql";
 
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-
-import faLongArrowRight from '@fortawesome/fontawesome-pro-regular/faLongArrowRight';
-import faRocket from '@fortawesome/fontawesome-pro-light/faRocket';
-import faPencilAlt from '@fortawesome/fontawesome-pro-light/faPencilAlt';
-
-
 export default class IndexPage extends React.Component {
   handleScriptLoad() {
     if (typeof window !== `undefined` && window.netlifyIdentity) {
@@ -47,15 +40,15 @@ export default class IndexPage extends React.Component {
               <li><em>Fullstack Web Developer</em> Because you can't just write Python to create a complete website, I have to be able to write HTML, CSS and Javascript myself. </li>
             </ul>
             <div className={'link-fullprofile'}>
-              <Link to="/page-2/">See Full Profile</Link><FontAwesomeIcon icon={faLongArrowRight} />
+              <Link to="/page-2/">See Full Profile</Link><i className={'far fa-long-arrow-right'} />
             </div>
           </section>
 
           <section className={'projects'}>
-            <h2><FontAwesomeIcon icon={faRocket} /> PROJECTS</h2>
+            <h2><i className={'fal fa-rocket'} /> PROJECTS</h2>
             <p>I always have ideas to do something</p>
             <div className={'row'}>
-              <div className={'col-md-4'}>
+              <div className={'col-ld-4 col-md-6'}>
                 <div className={'project-box'}>
                   <Link><h3>Developer's Notebook</h3></Link>
                   <p>sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Quam diu etiam furor iste tuus nos eludet?</p>
@@ -65,21 +58,25 @@ export default class IndexPage extends React.Component {
           </section>
 
           <section className={'writings'}>
-            <h2><FontAwesomeIcon icon={faPencilAlt} /> WRITINGS</h2>
-            <ul>
-              {posts
-                .filter(post => post.node.frontmatter.templateKey === "blog-post")
-                .map(({ node: post }) => (
-                  <li key={post.id}>
-                    <div className={'category'}>Javascript</div>
-                    <Link to={post.frontmatter.path}>
-                      <h3>{post.frontmatter.title}</h3>
-                    </Link>
-                    <p dangerouslySetInnerHTML={{ __html: post.frontmatter.description }} />
-                    <hr/>
-                  </li>
-                ))}
-            </ul>
+            <h2><i className={'fal fa-pencil-alt'}/> WRITINGS</h2>
+            <div className={'row'}>
+              <div className={'col-lg-10'}>
+                <ul>
+                  {posts
+                    .filter(post => post.node.frontmatter.templateKey === "blog-post")
+                    .map(({ node: post }) => (
+                      <li key={post.id}>
+                        <div className={'category'}>Javascript</div>
+                        <Link to={post.frontmatter.path}>
+                          <h3>{post.frontmatter.title}</h3>
+                        </Link>
+                        <p dangerouslySetInnerHTML={{ __html: post.frontmatter.description }} />
+                        <hr/>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            </div>
           </section>
         </div>
       </section>
