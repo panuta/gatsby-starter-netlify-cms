@@ -117,27 +117,23 @@
       padding: 1rem 1.2rem;
 
       a {
-        color: #256bba;
-        display: inline-block;
+        @include link-underline(#fff, #333, #B2D7FF);
 
-        h3 {
-          font-family: Nunito, sans-serif;
-          font-weight: 400;
-          font-size: 1.2em;
-          margin-bottom: 0.3rem;
-        }
+        color: #333;
+
+        font-family: Cardo, serif;
+        font-weight: 400;
+        font-size: 1.2em;
 
         &:hover {
-          h3 {
-            text-decoration: underline;
-          }
+          text-decoration: none;
         }
       }
 
       p {
         color: #555;
         font-size: 0.9rem;
-        margin-bottom: 0;
+        margin: 0.3rem 0 0 0;
       }
     }
   }
@@ -172,24 +168,22 @@
     }
 
     a {
-      color: #256bba;
-      display: inline-block;
+      @include link-underline(#fff, #333, #B2D7FF);
 
-      h3 {
-        font-family: Cardo, serif;
-        font-weight: 400;
-        font-size: 1.5em;
-      }
+      color: #333;
+
+      font-family: Cardo, serif;
+      font-weight: 400;
+      font-size: 1.5em;
 
       &:hover {
-        h3 {
-          text-decoration: underline;
-        }
+        text-decoration: none;
       }
     }
 
     p {
       color: #555;
+      margin: 0.5rem 0 1rem 0;
     }
 
     hr {

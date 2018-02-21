@@ -2,6 +2,8 @@
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins/breakpoints';
 
+@import "utils/underline";
+
 @import "nav";
 @import 'pages/all';
 

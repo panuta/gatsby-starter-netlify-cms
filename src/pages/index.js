@@ -50,7 +50,7 @@ export default class IndexPage extends React.Component {
             <div className={'row'}>
               <div className={'col-ld-4 col-md-6'}>
                 <div className={'project-box'}>
-                  <Link><h3>Developer's Notebook</h3></Link>
+                  <Link>Developer's Notebook</Link>
                   <p>sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Quam diu etiam furor iste tuus nos eludet?</p>
                 </div>
               </div>
@@ -68,7 +68,7 @@ export default class IndexPage extends React.Component {
                       <li key={post.id}>
                         <div className={'category'}>Javascript</div>
                         <Link to={post.frontmatter.path}>
-                          <h3>{post.frontmatter.title}</h3>
+                          {post.frontmatter.title}
                         </Link>
                         <p dangerouslySetInnerHTML={{ __html: post.frontmatter.description }} />
                         <hr/>
