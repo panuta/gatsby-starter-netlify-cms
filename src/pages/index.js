@@ -40,7 +40,7 @@ export default class IndexPage extends React.Component {
               <li><em>Fullstack Web Developer</em> Because you can't just write Python to create a complete website, I have to be able to write HTML, CSS and Javascript myself. </li>
             </ul>
             <div className={'link-fullprofile'}>
-              <Link to="/page-2/">See Full Profile</Link><i className={'far fa-long-arrow-right'} />
+              <Link to="/profile/">See Full Profile</Link><i className={'far fa-long-arrow-right'} />
             </div>
           </section>
 
