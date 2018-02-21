@@ -1,0 +1,51 @@
+.page-contact {
+  header {
+    padding: 0 40px;
+
+    @include media-breakpoint-down(md) {
+      padding: 0 15px;
+    }
+  }
+
+  h1 {
+    font-family: Cardo, serif;
+    font-weight: 400;
+    font-size: 3em;
+    color: #222;
+    margin: 0 0 1.5rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: 1.5rem;
+    }
+  }
+
+  main {
+    padding: 0 40px;
+
+    @include media-breakpoint-down(md) {
+      padding: 0 15px;
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        list-style: none;
+        margin-bottom: 1.5rem;
+
+        .purpose {
+          font-size: 1.2rem;
+        }
+
+        .contact {
+          color: #555;
+          margin-top: 0.3rem;
+
+          a {
+
+          }
+        }
+      }
+    }
+  }
+}
