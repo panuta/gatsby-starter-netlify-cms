@@ -3,7 +3,7 @@
     padding: 0 40px;
 
     @include media-breakpoint-down(md) {
-      padding: 0 15px;
+      padding: 0;
     }
   }
 
@@ -35,16 +35,20 @@
     padding: 0 40px;
 
     @include media-breakpoint-down(md) {
-      padding: 0 15px;
+      padding: 0;
     }
 
     .introduction {
       margin-bottom: 3rem;
 
       .content {
-        mask: url(#mask);
-        height: 250px;
+        height: auto;
         width: 100%;
+
+        &.collapsed {
+          mask: url(#mask);
+          height: 250px;
+        }
       }
 
       .readmore {
@@ -63,7 +67,7 @@
       p {
         color: #555;
         font-family: 'Nunito', sans-serif;
-        font-size: 1.3rem;
+        font-size: 1.15rem;
         font-weight: 400;
 
         strong {
@@ -73,5 +77,78 @@
       }
     }
 
+    .timeline {
+      ul, ol {
+        padding: 0;
+
+        li {
+          list-style: none;
+        }
+      }
+
+      ol {
+        border-left: 3px solid #ccc;
+        margin: 1.5rem 0 0 15px;
+      }
+
+      .year {
+        margin: -10px 0 2rem -11px;
+        position: relative;
+
+        &:before {
+          background-color: #fff;
+          border: 3px solid #444;
+          border-radius: 100px;
+          content: "";
+          height: 20px;
+          width: 20px;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .number {
+          font-family: Cardo, serif;
+          font-weight: 700;
+          font-size: 1.4em;
+
+          margin: -6px 0 0 35px;
+          position: absolute;
+        }
+
+        .entries {
+          font-family: 'Nunito', sans-serif;
+          font-size: 1.1rem;
+          padding: 30px 0 0 35px;
+
+          .gallery {
+            margin: 1rem 0 0 0;
+            position: relative;
+
+            a {
+              display: inline-block;
+              margin: 0 10px 10px 0;
+
+              &:last-child {
+                margin: 0;
+              }
+            }
+
+            @include media-breakpoint-down(xs) {
+              width: 100%;
+
+              a {
+                margin: 0 0 15px;
+                width: 100%;
+
+                img {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
